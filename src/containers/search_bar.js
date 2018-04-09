@@ -22,7 +22,7 @@ class SearchBar extends Component {
 
     _.debounce(
       () => this.props.fetchRepositories(this.state.term),
-      500
+      1000
     )();
   }
 
